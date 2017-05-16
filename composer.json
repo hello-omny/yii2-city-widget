@@ -1,0 +1,40 @@
+{
+    "name": "omny/yii2-city-widget",
+    "description": "Yii2 city widget extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","city","component","geo-ip","free-geo-ip"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Omny",
+            "email": "hello.omny@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.5",
+        "yiisoft/yii2-bootstrap": "*",
+        "kak/select2": "dev-master",
+        "omny/yii2-city-component": "dev-master"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "omny\\yii2\\city\\widget\\": "src/"
+        }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset":{
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    }
+}
