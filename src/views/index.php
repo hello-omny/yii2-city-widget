@@ -25,7 +25,9 @@ Modal::begin([
 
 Pjax::begin([
     'id' => 'cityComponentPjax',
-    'enablePushState' => false
+    'enablePushState' => false,
+    'timeout' => false,
+    'linkSelector' => '.region-item',
 ]);
 
 echo $this->render('@omny/yii2/city/component/views/_search', [
